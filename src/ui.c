@@ -169,6 +169,7 @@ static void create_and_attach_feedback_label(UI *ui)
 {
     ui->feedback_label = gtk_label_new("");
     gtk_label_set_justify(GTK_LABEL(ui->feedback_label), GTK_JUSTIFY_CENTER);
+    gtk_label_set_yalign(GTK_LABEL(ui->feedback_label), 0.5);
     gtk_widget_set_no_show_all(ui->feedback_label, TRUE);
     gtk_widget_set_name(GTK_WIDGET(ui->feedback_label), "error");
 
